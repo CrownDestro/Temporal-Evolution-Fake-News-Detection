@@ -1,0 +1,199 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "news_id": "politifact_0",
+    "label": 1,
+    "bot_score_mean": 0.72,
+    "velocity": 261.39427741420457
+  },
+  "nodes": [
+    {
+      "node_type": "article",
+      "label": 1,
+      "id": 0
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 1
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 2
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 3
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 4
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 5
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 6
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 7
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 8
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 9
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 10
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 11
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 12
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 13
+    },
+    {
+      "node_type": "user",
+      "depth": 3,
+      "id": 14
+    },
+    {
+      "node_type": "user",
+      "depth": 3,
+      "id": 15
+    },
+    {
+      "node_type": "user",
+      "depth": 4,
+      "id": 16
+    },
+    {
+      "node_type": "user",
+      "depth": 4,
+      "id": 17
+    },
+    {
+      "node_type": "user",
+      "depth": 4,
+      "id": 18
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 1
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 5
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 6
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 7
+    },
+    {
+      "edge_type": "retweet",
+      "source": 2,
+      "target": 8
+    },
+    {
+      "edge_type": "retweet",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "edge_type": "retweet",
+      "source": 5,
+      "target": 10
+    },
+    {
+      "edge_type": "retweet",
+      "source": 6,
+      "target": 11
+    },
+    {
+      "edge_type": "retweet",
+      "source": 7,
+      "target": 12
+    },
+    {
+      "edge_type": "retweet",
+      "source": 7,
+      "target": 13
+    },
+    {
+      "edge_type": "retweet",
+      "source": 10,
+      "target": 14
+    },
+    {
+      "edge_type": "retweet",
+      "source": 13,
+      "target": 15
+    },
+    {
+      "edge_type": "retweet",
+      "source": 14,
+      "target": 16
+    },
+    {
+      "edge_type": "retweet",
+      "source": 14,
+      "target": 17
+    },
+    {
+      "edge_type": "retweet",
+      "source": 15,
+      "target": 18
+    }
+  ]
+}

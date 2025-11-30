@@ -1,0 +1,16 @@
+Time Window,Top Feature,Effect Size (d),Direction,Fake Mean,Real Mean,p-value
+1h,depth_width_ratio,-0.304,Real > Fake,2.36,2.55,0.000000
+1h,depth,-0.300,Real > Fake,4.72,5.11,0.000000
+1h,velocity,-0.291,Real > Fake,2.53,3.55,0.000001
+3h,velocity,-0.232,Real > Fake,1.25,1.60,0.000084
+3h,size,-0.214,Real > Fake,210.11,268.99,0.000290
+3h,depth_width_ratio,-0.184,Real > Fake,2.57,2.70,0.001864
+6h,velocity,-0.204,Real > Fake,0.76,0.94,0.000568
+6h,max_time,0.194,Fake > Real,323.90,311.84,0.001043
+6h,growth_velocity,0.170,Fake > Real,13.19,9.33,0.004033
+12h,max_time,0.359,Fake > Real,635.45,584.65,0.000000
+12h,velocity,-0.209,Real > Fake,0.45,0.55,0.000411
+12h,growth_velocity,0.158,Fake > Real,5.17,3.63,0.007507
+24h,max_time,0.455,Fake > Real,1208.96,1053.56,0.000000
+24h,velocity,-0.271,Real > Fake,0.26,0.36,0.000005
+24h,growth_velocity,0.169,Fake > Real,2.22,1.35,0.004255

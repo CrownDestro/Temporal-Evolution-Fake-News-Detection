@@ -1,0 +1,30 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "news_id": "politifact_951",
+    "label": 0,
+    "bot_score_mean": 0.5340964880693194,
+    "velocity": 101.27889080222378,
+    "bot_category": "low"
+  },
+  "nodes": [
+    {
+      "node_type": "article",
+      "label": 0,
+      "id": 0
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 1
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 1
+    }
+  ]
+}

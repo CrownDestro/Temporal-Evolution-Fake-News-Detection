@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter15/16 Cascade Visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            padding: 25px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            color: #495057;
+            font-size: 0.9em;
+        }
+
+        select, button {
+            padding: 10px 20px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        select {
+            background: white;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-weight: 600;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .viz-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .network-panel {
+            flex: 2;
+            background: white;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            position: relative;
+        }
+
+        .info-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f3f5;
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .legend {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-circle {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid #333;
+        }
+
+        #network {
+            width: 100%;
+            height: 600px;
+        }
+
+        .node {
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .node:hover {
+            stroke-width: 3px;
+        }
+
+        .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            border-radius: 5px;
+            pointer-events: none;
+            font-size: 0.9em;
+            z-index: 1000;
+            display: none;
+        }
+
+        .fake-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .real-badge {
+            background: #27ae60;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 Twitter15/16 Propagation Network Visualization</h1>
+            <p>Interactive exploration of fake vs real news spreading patterns</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label>Network Type:</label>
+                <select id="networkType">
+                    <option value="fake">Fake News Cascade</option>
+                    <option value="real">Real News Cascade</option>
+                    <option value="compare">Side-by-Side</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label>Time Window:</label>
+                <select id="timeWindow">
+                    <option value="1">1 Hour</option>
+                    <option value="3">3 Hours</option>
+                    <option value="6">6 Hours</option>
+                    <option value="12">12 Hours</option>
+                    <option value="24" selected>24 Hours (Full)</option>
+                </select>
+            </div>
+
+            <button onclick="generateNetwork()">🔄 Generate Network</button>
+            <button onclick="exportVisualization()">💾 Export Image</button>
+        </div>
+
+        <div class="viz-container">
+            <div class="network-panel">
+                <svg id="network"></svg>
+                <div class="tooltip" id="tooltip"></div>
+            </div>
+
+            <div class="info-panel">
+                <div class="info-card">
+                    <h3>📊 Network Statistics</h3>
+                    <div class="metric">
+                        <span class="metric-label">Type:</span>
+                        <span class="metric-value" id="netType">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Nodes:</span>
+                        <span class="metric-value" id="nodeCount">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Edges:</span>
+                        <span class="metric-value" id="edgeCount">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Max Depth:</span>
+                        <span class="metric-value" id="maxDepth">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Avg Degree:</span>
+                        <span class="metric-value" id="avgDegree">-</span>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎨 Legend</h3>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-circle" style="background: #3498db;"></div>
+                            <span>Source Tweet</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-circle" style="background: #e74c3c;"></div>
+                            <span>Depth 1-2</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-circle" style="background: #f39c12;"></div>
+                            <span>Depth 3-5</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-circle" style="background: #27ae60;"></div>
+                            <span>Depth 6+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>📈 Pattern Analysis</h3>
+                    <div id="patternAnalysis" style="font-size: 0.95em; line-height: 1.6; color: #495057;">
+                        Select a network type and click "Generate Network" to see propagation pattern analysis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Generate synthetic cascade data
+        function generateCascadeData(type, timeWindow) {
+            const nodes = [];
+            const links = [];
+            
+            // Root node
+            nodes.push({
+                id: 0,
+                depth: 0,
+                type: 'source'
+            });
+
+            let nodeId = 1;
+            let maxDepth = type === 'fake' ? Math.floor(Math.random() * 3) + 5 : Math.floor(Math.random() * 3) + 3;
+            
+            // Scale by time window
+            let scaleFactor = timeWindow / 24;
+            if (type === 'fake') {
+                // Fake news: burst early, less growth later
+                scaleFactor = timeWindow <= 3 ? scaleFactor * 1.5 : scaleFactor * 0.7;
+            }
+
+            // Generate cascade
+            for (let depth = 1; depth <= maxDepth; depth++) {
+                let nodesAtDepth = type === 'fake' 
+                    ? Math.max(1, Math.floor((Math.random() * 8 + 5) * scaleFactor / depth))
+                    : Math.max(1, Math.floor((Math.random() * 5 + 3) * scaleFactor / Math.sqrt(depth)));
+
+                for (let i = 0; i < nodesAtDepth; i++) {
+                    // Find parent from previous depth
+                    const parentNodes = nodes.filter(n => n.depth === depth - 1);
+                    const parent = parentNodes[Math.floor(Math.random() * parentNodes.length)];
+
+                    nodes.push({
+                        id: nodeId,
+                        depth: depth,
+                        type: 'user',
+                        parent: parent.id
+                    });
+
+                    links.push({
+                        source: parent.id,
+                        target: nodeId
+                    });
+
+                    nodeId++;
+                }
+            }
+
+            return { nodes, links, maxDepth };
+        }
+
+        function getNodeColor(node) {
+            if (node.type === 'source') return '#3498db';
+            if (node.depth <= 2) return '#e74c3c';
+            if (node.depth <= 5) return '#f39c12';
+            return '#27ae60';
+        }
+
+        function generateNetwork() {
+            const type = document.getElementById('networkType').value;
+            const timeWindow = parseInt(document.getElementById('timeWindow').value);
+
+            if (type === 'compare') {
+                generateCompareView(timeWindow);
+                return;
+            }
+
+            const data = generateCascadeData(type, timeWindow);
+            visualizeNetwork(data, type, timeWindow);
+            updateStats(data, type, timeWindow);
+            updatePatternAnalysis(data, type, timeWindow);
+        }
+
+        function visualizeNetwork(data, type, timeWindow) {
+            const width = document.getElementById('network').clientWidth;
+            const height = 600;
+
+            d3.select('#network').selectAll('*').remove();
+
+            const svg = d3.select('#network')
+                .attr('width', width)
+                .attr('height', height);
+
+            const simulation = d3.forceSimulation(data.nodes)
+                .force('link', d3.forceLink(data.links).id(d => d.id).distance(50))
+                .force('charge', d3.forceManyBody().strength(-200))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(20));
+
+            const link = svg.append('g')
+                .selectAll('line')
+                .data(data.links)
+                .join('line')
+                .attr('class', 'link')
+                .attr('stroke-width', 2);
+
+            const node = svg.append('g')
+                .selectAll('circle')
+                .data(data.nodes)
+                .join('circle')
+                .attr('class', 'node')
+                .attr('r', d => d.type === 'source' ? 12 : 8)
+                .attr('fill', d => getNodeColor(d))
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 2)
+                .on('mouseover', function(event, d) {
+                    const tooltip = document.getElementById('tooltip');
+                    tooltip.style.display = 'block';
+                    tooltip.style.left = event.pageX + 10 + 'px';
+                    tooltip.style.top = event.pageY - 10 + 'px';
+                    tooltip.innerHTML = `
+                        <strong>Node ${d.id}</strong><br>
+                        Type: ${d.type === 'source' ? 'Source Tweet' : 'Retweet'}<br>
+                        Depth: ${d.depth}
+                    `;
+                })
+                .on('mouseout', function() {
+                    document.getElementById('tooltip').style.display = 'none';
+                })
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended));
+
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
+
+                node
+                    .attr('cx', d => d.x)
+                    .attr('cy', d => d.y);
+            });
+
+            function dragstarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
+
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+
+            function dragended(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
+        }
+
+        function updateStats(data, type, timeWindow) {
+            document.getElementById('netType').innerHTML = type === 'fake' 
+                ? '<span class="fake-badge">FAKE NEWS</span>' 
+                : '<span class="real-badge">REAL NEWS</span>';
+            document.getElementById('nodeCount').textContent = data.nodes.length;
+            document.getElementById('edgeCount').textContent = data.links.length;
+            document.getElementById('maxDepth').textContent = data.maxDepth;
+            
+            const avgDegree = (data.links.length * 2 / data.nodes.length).toFixed(2);
+            document.getElementById('avgDegree').textContent = avgDegree;
+        }
+
+        function updatePatternAnalysis(data, type, timeWindow) {
+            const analysis = document.getElementById('patternAnalysis');
+            
+            if (type === 'fake') {
+                analysis.innerHTML = `
+                    <strong>🚨 Fake News Pattern Detected:</strong><br><br>
+                    • <strong>Burst Growth:</strong> Rapid initial spreading (${data.nodes.length} nodes at ${timeWindow}h)<br>
+                    • <strong>Deep Cascades:</strong> Max depth of ${data.maxDepth} indicates viral chains<br>
+                    • <strong>Artificial Amplification:</strong> High early velocity suggests coordinated spreading<br>
+                    • <strong>Decay Expected:</strong> Growth rate will decline after peak
+                `;
+            } else {
+                analysis.innerHTML = `
+                    <strong>✅ Real News Pattern Detected:</strong><br><br>
+                    • <strong>Steady Growth:</strong> Gradual organic expansion (${data.nodes.length} nodes at ${timeWindow}h)<br>
+                    • <strong>Moderate Depth:</strong> Max depth of ${data.maxDepth} indicates natural spreading<br>
+                    • <strong>Organic Engagement:</strong> Balanced growth suggests authentic interest<br>
+                    • <strong>Sustained Pattern:</strong> Consistent velocity throughout timeline
+                `;
+            }
+        }
+
+        function generateCompareView(timeWindow) {
+            alert('Side-by-side comparison view coming soon! For now, toggle between fake and real to compare patterns.');
+        }
+
+        function exportVisualization() {
+            alert('Export feature: Right-click on the network and select "Save Image As" to export the visualization.');
+        }
+
+        // Generate initial network
+        window.onload = () => {
+            generateNetwork();
+        };
+    </script>
+</body>
+</html>

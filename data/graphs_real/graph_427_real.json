@@ -1,0 +1,60 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "news_id": "politifact_447",
+    "label": 0,
+    "bot_score_mean": 0.33185533095708103,
+    "velocity": 81.97172379908457,
+    "bot_category": "low"
+  },
+  "nodes": [
+    {
+      "node_type": "article",
+      "label": 0,
+      "id": 0
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 1
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 2
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 3
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 4
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 1
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "edge_type": "retweet",
+      "source": 1,
+      "target": 4
+    }
+  ]
+}

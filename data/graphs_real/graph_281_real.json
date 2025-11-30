@@ -1,0 +1,1225 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "tweet_id": "407211258304552960",
+    "label": 0,
+    "num_users": 92,
+    "num_edges": 93
+  },
+  "nodes": [
+    {
+      "node_type": "source",
+      "tweet_id": "407211258304552960",
+      "user_id": "root",
+      "time_delay": 0.0,
+      "label": "true",
+      "content": "paul walker was doing good and giving back on the day of his tragic death: URL",
+      "id": 0
+    },
+    {
+      "node_type": "user",
+      "user_id": "ROOT",
+      "tweet_id": "ROOT",
+      "time_delay": 0.0,
+      "id": 1
+    },
+    {
+      "node_type": "user",
+      "user_id": "20012204",
+      "tweet_id": "407211258304552960",
+      "time_delay": 0.0,
+      "id": 2
+    },
+    {
+      "node_type": "user",
+      "user_id": "258345849",
+      "tweet_id": "407211487170535424",
+      "time_delay": 0.9,
+      "id": 3
+    },
+    {
+      "node_type": "user",
+      "user_id": "2191548511",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 4
+    },
+    {
+      "node_type": "user",
+      "user_id": "83171355",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 5
+    },
+    {
+      "node_type": "user",
+      "user_id": "58368441",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 6
+    },
+    {
+      "node_type": "user",
+      "user_id": "145778232",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 7
+    },
+    {
+      "node_type": "user",
+      "user_id": "536960351",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 8
+    },
+    {
+      "node_type": "user",
+      "user_id": "565925028",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 9
+    },
+    {
+      "node_type": "user",
+      "user_id": "1037876287",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 10
+    },
+    {
+      "node_type": "user",
+      "user_id": "114560532",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 11
+    },
+    {
+      "node_type": "user",
+      "user_id": "948815372",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.18,
+      "id": 12
+    },
+    {
+      "node_type": "user",
+      "user_id": "2225223696",
+      "tweet_id": "407212339557974016",
+      "time_delay": 4.3,
+      "id": 13
+    },
+    {
+      "node_type": "user",
+      "user_id": "480344878",
+      "tweet_id": "407211258304552960",
+      "time_delay": 4.65,
+      "id": 14
+    },
+    {
+      "node_type": "user",
+      "user_id": "548973196",
+      "tweet_id": "407211258304552960",
+      "time_delay": 5.13,
+      "id": 15
+    },
+    {
+      "node_type": "user",
+      "user_id": "321759817",
+      "tweet_id": "407211258304552960",
+      "time_delay": 5.3,
+      "id": 16
+    },
+    {
+      "node_type": "user",
+      "user_id": "514710414",
+      "tweet_id": "407211258304552960",
+      "time_delay": 5.67,
+      "id": 17
+    },
+    {
+      "node_type": "user",
+      "user_id": "2189087948",
+      "tweet_id": "407211258304552960",
+      "time_delay": 6.42,
+      "id": 18
+    },
+    {
+      "node_type": "user",
+      "user_id": "37230170",
+      "tweet_id": "407211258304552960",
+      "time_delay": 6.58,
+      "id": 19
+    },
+    {
+      "node_type": "user",
+      "user_id": "329962715",
+      "tweet_id": "407211258304552960",
+      "time_delay": 6.75,
+      "id": 20
+    },
+    {
+      "node_type": "user",
+      "user_id": "120782951",
+      "tweet_id": "407211258304552960",
+      "time_delay": 7.07,
+      "id": 21
+    },
+    {
+      "node_type": "user",
+      "user_id": "2150911473",
+      "tweet_id": "407211258304552960",
+      "time_delay": 7.25,
+      "id": 22
+    },
+    {
+      "node_type": "user",
+      "user_id": "1000326727",
+      "tweet_id": "407211258304552960",
+      "time_delay": 7.3,
+      "id": 23
+    },
+    {
+      "node_type": "user",
+      "user_id": "24408244",
+      "tweet_id": "407211258304552960",
+      "time_delay": 8.52,
+      "id": 24
+    },
+    {
+      "node_type": "user",
+      "user_id": "702305658",
+      "tweet_id": "407211258304552960",
+      "time_delay": 8.67,
+      "id": 25
+    },
+    {
+      "node_type": "user",
+      "user_id": "196355467",
+      "tweet_id": "407211258304552960",
+      "time_delay": 9.03,
+      "id": 26
+    },
+    {
+      "node_type": "user",
+      "user_id": "147703952",
+      "tweet_id": "407211258304552960",
+      "time_delay": 9.17,
+      "id": 27
+    },
+    {
+      "node_type": "user",
+      "user_id": "239810130",
+      "tweet_id": "407211258304552960",
+      "time_delay": 9.22,
+      "id": 28
+    },
+    {
+      "node_type": "user",
+      "user_id": "14942812",
+      "tweet_id": "407211258304552960",
+      "time_delay": 11.13,
+      "id": 29
+    },
+    {
+      "node_type": "user",
+      "user_id": "51820133",
+      "tweet_id": "407211258304552960",
+      "time_delay": 11.25,
+      "id": 30
+    },
+    {
+      "node_type": "user",
+      "user_id": "1029416634",
+      "tweet_id": "407211258304552960",
+      "time_delay": 11.33,
+      "id": 31
+    },
+    {
+      "node_type": "user",
+      "user_id": "586287326",
+      "tweet_id": "407211258304552960",
+      "time_delay": 12.92,
+      "id": 32
+    },
+    {
+      "node_type": "user",
+      "user_id": "161487545",
+      "tweet_id": "407211258304552960",
+      "time_delay": 12.98,
+      "id": 33
+    },
+    {
+      "node_type": "user",
+      "user_id": "1122907345",
+      "tweet_id": "407211258304552960",
+      "time_delay": 13.47,
+      "id": 34
+    },
+    {
+      "node_type": "user",
+      "user_id": "364433376",
+      "tweet_id": "407211258304552960",
+      "time_delay": 13.6,
+      "id": 35
+    },
+    {
+      "node_type": "user",
+      "user_id": "469624886",
+      "tweet_id": "407211258304552960",
+      "time_delay": 14.08,
+      "id": 36
+    },
+    {
+      "node_type": "user",
+      "user_id": "1710331884",
+      "tweet_id": "407211258304552960",
+      "time_delay": 14.43,
+      "id": 37
+    },
+    {
+      "node_type": "user",
+      "user_id": "296526230",
+      "tweet_id": "407211258304552960",
+      "time_delay": 14.62,
+      "id": 38
+    },
+    {
+      "node_type": "user",
+      "user_id": "1927747880",
+      "tweet_id": "407211258304552960",
+      "time_delay": 14.68,
+      "id": 39
+    },
+    {
+      "node_type": "user",
+      "user_id": "1499652660",
+      "tweet_id": "407215142321922048",
+      "time_delay": 15.43,
+      "id": 40
+    },
+    {
+      "node_type": "user",
+      "user_id": "270447279",
+      "tweet_id": "407211258304552960",
+      "time_delay": 16.17,
+      "id": 41
+    },
+    {
+      "node_type": "user",
+      "user_id": "86315935",
+      "tweet_id": "407211258304552960",
+      "time_delay": 16.23,
+      "id": 42
+    },
+    {
+      "node_type": "user",
+      "user_id": "26020884",
+      "tweet_id": "407211258304552960",
+      "time_delay": 17.1,
+      "id": 43
+    },
+    {
+      "node_type": "user",
+      "user_id": "1279830012",
+      "tweet_id": "407211258304552960",
+      "time_delay": 17.48,
+      "id": 44
+    },
+    {
+      "node_type": "user",
+      "user_id": "2207203020",
+      "tweet_id": "407211258304552960",
+      "time_delay": 18.5,
+      "id": 45
+    },
+    {
+      "node_type": "user",
+      "user_id": "13803222",
+      "tweet_id": "407211258304552960",
+      "time_delay": 19.2,
+      "id": 46
+    },
+    {
+      "node_type": "user",
+      "user_id": "57310501",
+      "tweet_id": "407211258304552960",
+      "time_delay": 20.43,
+      "id": 47
+    },
+    {
+      "node_type": "user",
+      "user_id": "314039274",
+      "tweet_id": "407211258304552960",
+      "time_delay": 23.82,
+      "id": 48
+    },
+    {
+      "node_type": "user",
+      "user_id": "525723796",
+      "tweet_id": "407211258304552960",
+      "time_delay": 25.87,
+      "id": 49
+    },
+    {
+      "node_type": "user",
+      "user_id": "30546144",
+      "tweet_id": "407211258304552960",
+      "time_delay": 26.53,
+      "id": 50
+    },
+    {
+      "node_type": "user",
+      "user_id": "782348136",
+      "tweet_id": "407211258304552960",
+      "time_delay": 27.15,
+      "id": 51
+    },
+    {
+      "node_type": "user",
+      "user_id": "440343992",
+      "tweet_id": "407211258304552960",
+      "time_delay": 28.73,
+      "id": 52
+    },
+    {
+      "node_type": "user",
+      "user_id": "226650243",
+      "tweet_id": "407211258304552960",
+      "time_delay": 30.23,
+      "id": 53
+    },
+    {
+      "node_type": "user",
+      "user_id": "1273596176",
+      "tweet_id": "407211258304552960",
+      "time_delay": 32.58,
+      "id": 54
+    },
+    {
+      "node_type": "user",
+      "user_id": "31637449",
+      "tweet_id": "407211258304552960",
+      "time_delay": 32.8,
+      "id": 55
+    },
+    {
+      "node_type": "user",
+      "user_id": "168561537",
+      "tweet_id": "407211258304552960",
+      "time_delay": 35.83,
+      "id": 56
+    },
+    {
+      "node_type": "user",
+      "user_id": "55118760",
+      "tweet_id": "407211258304552960",
+      "time_delay": 36.52,
+      "id": 57
+    },
+    {
+      "node_type": "user",
+      "user_id": "25870757",
+      "tweet_id": "407211258304552960",
+      "time_delay": 39.9,
+      "id": 58
+    },
+    {
+      "node_type": "user",
+      "user_id": "46011706",
+      "tweet_id": "407211258304552960",
+      "time_delay": 42.1,
+      "id": 59
+    },
+    {
+      "node_type": "user",
+      "user_id": "18341212",
+      "tweet_id": "407211258304552960",
+      "time_delay": 42.95,
+      "id": 60
+    },
+    {
+      "node_type": "user",
+      "user_id": "214225018",
+      "tweet_id": "407211258304552960",
+      "time_delay": 44.1,
+      "id": 61
+    },
+    {
+      "node_type": "user",
+      "user_id": "296520482",
+      "tweet_id": "407211258304552960",
+      "time_delay": 44.22,
+      "id": 62
+    },
+    {
+      "node_type": "user",
+      "user_id": "147651067",
+      "tweet_id": "407211258304552960",
+      "time_delay": 50.83,
+      "id": 63
+    },
+    {
+      "node_type": "user",
+      "user_id": "196901828",
+      "tweet_id": "407211258304552960",
+      "time_delay": 52.47,
+      "id": 64
+    },
+    {
+      "node_type": "user",
+      "user_id": "482388860",
+      "tweet_id": "407211258304552960",
+      "time_delay": 54.93,
+      "id": 65
+    },
+    {
+      "node_type": "user",
+      "user_id": "37220980",
+      "tweet_id": "407211258304552960",
+      "time_delay": 57.35,
+      "id": 66
+    },
+    {
+      "node_type": "user",
+      "user_id": "27234628",
+      "tweet_id": "407211258304552960",
+      "time_delay": 61.43,
+      "id": 67
+    },
+    {
+      "node_type": "user",
+      "user_id": "1534708008",
+      "tweet_id": "407211258304552960",
+      "time_delay": 64.72,
+      "id": 68
+    },
+    {
+      "node_type": "user",
+      "user_id": "244865476",
+      "tweet_id": "407211258304552960",
+      "time_delay": 68.63,
+      "id": 69
+    },
+    {
+      "node_type": "user",
+      "user_id": "523567821",
+      "tweet_id": "407228810656903168",
+      "time_delay": 69.75,
+      "id": 70
+    },
+    {
+      "node_type": "user",
+      "user_id": "63495546",
+      "tweet_id": "407211258304552960",
+      "time_delay": 72.55,
+      "id": 71
+    },
+    {
+      "node_type": "user",
+      "user_id": "1444228290",
+      "tweet_id": "407211258304552960",
+      "time_delay": 75.12,
+      "id": 72
+    },
+    {
+      "node_type": "user",
+      "user_id": "41040116",
+      "tweet_id": "407211258304552960",
+      "time_delay": 78.08,
+      "id": 73
+    },
+    {
+      "node_type": "user",
+      "user_id": "320563579",
+      "tweet_id": "407211258304552960",
+      "time_delay": 82.85,
+      "id": 74
+    },
+    {
+      "node_type": "user",
+      "user_id": "1245431852",
+      "tweet_id": "407211258304552960",
+      "time_delay": 83.3,
+      "id": 75
+    },
+    {
+      "node_type": "user",
+      "user_id": "43748217",
+      "tweet_id": "407211258304552960",
+      "time_delay": 96.9,
+      "id": 76
+    },
+    {
+      "node_type": "user",
+      "user_id": "195267498",
+      "tweet_id": "407240645783203840",
+      "time_delay": 116.77,
+      "id": 77
+    },
+    {
+      "node_type": "user",
+      "user_id": "588775038",
+      "tweet_id": "407211258304552960",
+      "time_delay": 124.42,
+      "id": 78
+    },
+    {
+      "node_type": "user",
+      "user_id": "51906885",
+      "tweet_id": "407211258304552960",
+      "time_delay": 159.53,
+      "id": 79
+    },
+    {
+      "node_type": "user",
+      "user_id": "1133130044",
+      "tweet_id": "407211258304552960",
+      "time_delay": 172.98,
+      "id": 80
+    },
+    {
+      "node_type": "user",
+      "user_id": "934823630",
+      "tweet_id": "407211258304552960",
+      "time_delay": 194.68,
+      "id": 81
+    },
+    {
+      "node_type": "user",
+      "user_id": "1689860738",
+      "tweet_id": "407211258304552960",
+      "time_delay": 198.03,
+      "id": 82
+    },
+    {
+      "node_type": "user",
+      "user_id": "251913198",
+      "tweet_id": "407211258304552960",
+      "time_delay": 206.72,
+      "id": 83
+    },
+    {
+      "node_type": "user",
+      "user_id": "161415313",
+      "tweet_id": "407211258304552960",
+      "time_delay": 243.93,
+      "id": 84
+    },
+    {
+      "node_type": "user",
+      "user_id": "320088086",
+      "tweet_id": "407211258304552960",
+      "time_delay": 294.87,
+      "id": 85
+    },
+    {
+      "node_type": "user",
+      "user_id": "16652075",
+      "tweet_id": "407211258304552960",
+      "time_delay": 360.37,
+      "id": 86
+    },
+    {
+      "node_type": "user",
+      "user_id": "354659997",
+      "tweet_id": "407211258304552960",
+      "time_delay": 382.18,
+      "id": 87
+    },
+    {
+      "node_type": "user",
+      "user_id": "78509047",
+      "tweet_id": "407211258304552960",
+      "time_delay": 626.18,
+      "id": 88
+    },
+    {
+      "node_type": "user",
+      "user_id": "1428577364",
+      "tweet_id": "407211258304552960",
+      "time_delay": 799.97,
+      "id": 89
+    },
+    {
+      "node_type": "user",
+      "user_id": "458278122",
+      "tweet_id": "407441062836187136",
+      "time_delay": 913.15,
+      "id": 90
+    },
+    {
+      "node_type": "user",
+      "user_id": "188025660",
+      "tweet_id": "407211258304552960",
+      "time_delay": 2240.88,
+      "id": 91
+    },
+    {
+      "node_type": "user",
+      "user_id": "2206866963",
+      "tweet_id": "407211258304552960",
+      "time_delay": 3520.35,
+      "id": 92
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "retweet",
+      "time_delay": 0.0,
+      "source": 0,
+      "target": 1
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 0.0,
+      "source": 1,
+      "target": 2
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 0.9,
+      "source": 2,
+      "target": 3
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 4
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 5
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 6
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 7
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 8
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 9
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 10
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 11
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.18,
+      "source": 2,
+      "target": 12
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.3,
+      "source": 2,
+      "target": 13
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 4.65,
+      "source": 2,
+      "target": 14
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 5.13,
+      "source": 2,
+      "target": 15
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 5.3,
+      "source": 2,
+      "target": 16
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 5.67,
+      "source": 2,
+      "target": 17
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 6.42,
+      "source": 2,
+      "target": 18
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 6.58,
+      "source": 2,
+      "target": 19
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 6.75,
+      "source": 2,
+      "target": 20
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 7.07,
+      "source": 2,
+      "target": 21
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 7.25,
+      "source": 2,
+      "target": 22
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 7.3,
+      "source": 2,
+      "target": 23
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 8.52,
+      "source": 2,
+      "target": 24
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 8.67,
+      "source": 2,
+      "target": 25
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 9.03,
+      "source": 2,
+      "target": 26
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 9.17,
+      "source": 2,
+      "target": 27
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 9.22,
+      "source": 2,
+      "target": 28
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 11.13,
+      "source": 2,
+      "target": 29
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 11.25,
+      "source": 2,
+      "target": 30
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 11.33,
+      "source": 2,
+      "target": 31
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 12.92,
+      "source": 2,
+      "target": 32
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 12.98,
+      "source": 2,
+      "target": 33
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 13.47,
+      "source": 2,
+      "target": 34
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 13.6,
+      "source": 2,
+      "target": 35
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 14.08,
+      "source": 2,
+      "target": 36
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 14.43,
+      "source": 2,
+      "target": 37
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 14.62,
+      "source": 2,
+      "target": 38
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 14.68,
+      "source": 2,
+      "target": 39
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 15.43,
+      "source": 2,
+      "target": 40
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 16.17,
+      "source": 2,
+      "target": 41
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 16.23,
+      "source": 2,
+      "target": 42
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 17.1,
+      "source": 2,
+      "target": 43
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 17.48,
+      "source": 2,
+      "target": 44
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 18.5,
+      "source": 2,
+      "target": 45
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 19.2,
+      "source": 2,
+      "target": 46
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 20.43,
+      "source": 2,
+      "target": 47
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 23.82,
+      "source": 2,
+      "target": 48
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 25.87,
+      "source": 2,
+      "target": 49
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 26.53,
+      "source": 2,
+      "target": 50
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 27.15,
+      "source": 2,
+      "target": 51
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 28.73,
+      "source": 2,
+      "target": 52
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 30.23,
+      "source": 2,
+      "target": 53
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 32.58,
+      "source": 2,
+      "target": 54
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 32.8,
+      "source": 2,
+      "target": 55
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 35.83,
+      "source": 2,
+      "target": 56
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 36.52,
+      "source": 2,
+      "target": 57
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 39.9,
+      "source": 2,
+      "target": 58
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 42.1,
+      "source": 2,
+      "target": 59
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 42.95,
+      "source": 2,
+      "target": 60
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 44.1,
+      "source": 2,
+      "target": 61
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 44.22,
+      "source": 2,
+      "target": 62
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 50.83,
+      "source": 2,
+      "target": 63
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 52.47,
+      "source": 2,
+      "target": 64
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 54.93,
+      "source": 2,
+      "target": 65
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 57.35,
+      "source": 2,
+      "target": 66
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 61.43,
+      "source": 2,
+      "target": 67
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 64.72,
+      "source": 2,
+      "target": 68
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 68.63,
+      "source": 2,
+      "target": 69
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 69.75,
+      "source": 2,
+      "target": 70
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 72.55,
+      "source": 2,
+      "target": 71
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 75.12,
+      "source": 2,
+      "target": 72
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 78.08,
+      "source": 2,
+      "target": 73
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 82.85,
+      "source": 2,
+      "target": 74
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 83.3,
+      "source": 2,
+      "target": 75
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 96.9,
+      "source": 2,
+      "target": 76
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 116.77,
+      "source": 2,
+      "target": 77
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 124.42,
+      "source": 2,
+      "target": 78
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 159.53,
+      "source": 2,
+      "target": 79
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 172.98,
+      "source": 2,
+      "target": 80
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 194.68,
+      "source": 2,
+      "target": 81
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 198.03,
+      "source": 2,
+      "target": 82
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 206.72,
+      "source": 2,
+      "target": 83
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 243.93,
+      "source": 2,
+      "target": 84
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 294.87,
+      "source": 2,
+      "target": 85
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 360.37,
+      "source": 2,
+      "target": 86
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 382.18,
+      "source": 2,
+      "target": 87
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 626.18,
+      "source": 2,
+      "target": 88
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 799.97,
+      "source": 2,
+      "target": 89
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 913.15,
+      "source": 2,
+      "target": 90
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 2240.88,
+      "source": 2,
+      "target": 91
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 3520.35,
+      "source": 2,
+      "target": 92
+    },
+    {
+      "edge_type": "retweet",
+      "time_delay": 0.0,
+      "source": 86,
+      "target": 86
+    }
+  ]
+}

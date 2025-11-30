@@ -1,0 +1,139 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "news_id": "politifact_177",
+    "label": 1,
+    "bot_score_mean": 0.72,
+    "velocity": 210.58053131241104
+  },
+  "nodes": [
+    {
+      "node_type": "article",
+      "label": 1,
+      "id": 0
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 1
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 2
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 3
+    },
+    {
+      "node_type": "user",
+      "depth": 1,
+      "id": 4
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 5
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 6
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 7
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 8
+    },
+    {
+      "node_type": "user",
+      "depth": 2,
+      "id": 9
+    },
+    {
+      "node_type": "user",
+      "depth": 3,
+      "id": 10
+    },
+    {
+      "node_type": "user",
+      "depth": 4,
+      "id": 11
+    },
+    {
+      "node_type": "user",
+      "depth": 4,
+      "id": 12
+    }
+  ],
+  "edges": [
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 1
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 2
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 3
+    },
+    {
+      "edge_type": "retweet",
+      "source": 0,
+      "target": 4
+    },
+    {
+      "edge_type": "retweet",
+      "source": 1,
+      "target": 5
+    },
+    {
+      "edge_type": "retweet",
+      "source": 1,
+      "target": 6
+    },
+    {
+      "edge_type": "retweet",
+      "source": 2,
+      "target": 7
+    },
+    {
+      "edge_type": "retweet",
+      "source": 3,
+      "target": 8
+    },
+    {
+      "edge_type": "retweet",
+      "source": 4,
+      "target": 9
+    },
+    {
+      "edge_type": "retweet",
+      "source": 9,
+      "target": 10
+    },
+    {
+      "edge_type": "retweet",
+      "source": 10,
+      "target": 11
+    },
+    {
+      "edge_type": "retweet",
+      "source": 10,
+      "target": 12
+    }
+  ]
+}
