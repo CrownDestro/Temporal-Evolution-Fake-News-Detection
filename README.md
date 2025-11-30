@@ -33,6 +33,3 @@ python3 src/improved_temporal_models.py
 - Early Detection (1h): F1=0.625, ROC-AUC=0.692
 - Full Detection (24h): F1=0.627, ROC-AUC=0.670
 - Time Savings: 96% with <1% performance cost
-
-## Citation
-[Your Name], [Year]. Early Fake News Detection Using Temporal Propagation Features. [Course/Conference].
